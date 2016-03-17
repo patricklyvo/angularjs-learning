@@ -5,17 +5,19 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="app2.js"></script>
+    <script type="text/javascript" src="app3.js"></script>
   </head>
   <!--<body ng-app="greetings"> -->
-  <body ng-app="functionalities">
+  <!-- <body ng-app="functionalities"> -->
+  <body ng-app="coolApp" ng-controller="FunCtrl as fun">
     <!-- <welcome></welcome> -->
     <!-- <div welcome></div> -->
     <!-- <div class="welcome"></div> -->
     <!-- directive: welcome -->
     <!-- <div welcome goodbye></div> -->
     <!-- <div entering leaving>Hover over me for fun times</div> -->
-    <div entering="activeClass" leaving>
-      Hover over me for fun times
-    </div>
+    <!-- <div entering="activeClass" leaving>Hover over me for fun times</div> -->
+    <!-- <div entering>Hover over me for fun times</div> -->
+    <div entering="fun.end()">Hover over me for fun times</div>
   </body>
 </html>
