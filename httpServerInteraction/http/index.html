@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$http</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="TestCtrl as test">
+    <h3>GET</h3>
+    <input ng-model="test.message" />
+    <button ng-click="test.getMessage()">getMessage</button>
+    <h3>POST</h3>
+    <input ng-model="test.sendMessage" placeholder="Enter a message" />
+    <button ng-click="test.postData(test.sendMessage)">uppercase</button>
+  </body>
+</html>
